@@ -1,0 +1,63 @@
+/*
+ * lay-out
+ */
+
+.body.overlay-active {
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+/*
+ * components
+ */
+
+.gallery {
+  &__img {
+    @include image-2x("../img/placeholder.jpg", 100%, 100%);
+    background-size: cover;
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    cursor: pointer;
+  }
+}
+
+.fullscreen-img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  overflow: hidden;
+  display: none;
+  &.active {
+    display: block;
+  }
+  img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*
+ * styling
+ */
+
+.button {
+  @include translateX;
+  padding: 15px 35px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  bottom: 5%;
+  display: inline-block;
+  cursor: pointer;
+}

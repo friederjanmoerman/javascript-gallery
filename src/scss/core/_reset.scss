@@ -1,0 +1,81 @@
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: black(0);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #FFFFFF;
+  color: #000000;
+  line-height: 1;
+}
+
+html,
+body,
+img,
+fieldset,
+abbr,
+acronym {
+  border: 0;
+}
+
+th,
+code,
+cite,
+caption {
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+}
+
+address {
+  font-style: normal;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+input:focus,
+input[type="search"]:focus {
+  outline-offset: -2px;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
