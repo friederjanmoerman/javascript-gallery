@@ -37,5 +37,8 @@
     "uglify-es": "^3.3.9",
     "uglify-js": "^3.4.9"
   },
-  "dependencies": {}
+  "dependencies": {
+    "cached-path-relative": "^1.0.2",
+    "event-stream": "^3.3.4"
+  }
 }
